@@ -38,7 +38,7 @@ The print icon used is part of [Font Awesome](http://fortawesome.github.io/Font-
 
 [Font Awesome](http://fortawesome.github.io/Font-Awesome/) - Print Icon - [License](http://fortawesome.github.io/Font-Awesome/license/)
 
-[Spectrum Colorpicket](https://github.com/bgrins/spectrum) - jQuery Color Picker Plugin in the Admin Menu - [License](https://github.com/bgrins/spectrum/blob/master/LICENSE)
+[Spectrum Colorpicker](https://github.com/bgrins/spectrum) - jQuery Color Picker Plugin in the Admin Menu - [License](https://github.com/bgrins/spectrum/blob/master/LICENSE)
 
 Thanks to [Ben Nadel](http://www.bennadel.com/blog/1591-ask-ben-print-part-of-a-web-page-with-jquery.htm) for his article on Print Part of a Website, This is a great article and great resource in general.
 
