@@ -6,7 +6,7 @@ Tested up to: 4.1
 License: GPL2 or Later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Adds a print icon to posts and allows a shortcode to be used on pages. Print a print friendly version of the post or page content with ease.
+Print posts and pages easily. Plugin adds a print button to posts and allows a shortcode to be used on pages. Customize the button to your theme.
 
 == Description ==
 
