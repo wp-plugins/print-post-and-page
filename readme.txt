@@ -2,7 +2,7 @@
 Contributors: html5andblog, apritchard2751
 Tags: print, print post, print page, print friendly, printer friendly
 Requires at least: 4.0
-Tested up to: 4.1
+Tested up to: 4.1.1
 License: GPL2 or Later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
