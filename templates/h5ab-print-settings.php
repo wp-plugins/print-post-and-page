@@ -93,7 +93,7 @@ $h5abPrintArray = get_option('h5abPrintData');
 
 <div class="h5ab-affiliate-advert">
                     <p style="margin: 0; text-align: center;">Advertisement</p>
-                    <a href="http://trck.me/318830/" target="_blank"><img src="http://dash.trck.me/img/newtrckmebanner300x250b.jpg" border="0" style="max-width: 100%; height: auto;" /></a>
+                    <a href="http://trck.me/?ref=mg147" target="_blank"><img src="http://dash.trck.me/img/newtrckmebanner300x250b.jpg" border="0" style="max-width: 100%; height: auto;" /></a>
                     <p style="margin: 0;">*Affiliate Link</p>
 
 </div>
