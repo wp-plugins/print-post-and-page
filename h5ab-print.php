@@ -4,7 +4,7 @@
  * Plugin Name: Print Post and Page
  * Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
  * Description: Add a Print Friendly Button to Posts and Pages.
- * Version: 0.11
+ * Version: 0.12
  * Author: HTML5andBeyond
  * Author URI: http://www.html5andbeyond.com/
  * License: GPL2 or Later
