@@ -93,7 +93,7 @@ $h5abPrintArray = get_option('h5abPrintData');
 
 <div class="h5ab-affiliate-advert">
                     <p style="margin: 0; text-align: center;">Advertisement</p>
-                    <a href="http://trck.me/?ref=mg147" target="_blank"><img src="<?php echo esc_url(plugins_url( '../images/newtrckmebanner300x250b.jpg', __FILE__ )) ?>" border="0" style="max-width: 100%; height: auto;" /></a>
+                    <a href="http://themeover.com?ap_id=html5andbeyond" target="_blank"><img src="<?php echo esc_url(plugins_url( '../images/MT_300x250.png', __FILE__ )) ?>" border="0" style="max-width: 100%; height: auto;" /></a>
                     <p style="margin: 0;">*Affiliate Link</p>
 
 </div>
@@ -101,7 +101,7 @@ $h5abPrintArray = get_option('h5abPrintData');
 <hr/>
 
 <div style="width: 98%; padding: 0 5px;">
-<p>*Affiliate Link - We (Plugin Authors) earn commission on sales generated through this link - We also use it ourselves and love the service.</p>
+<p>*Affiliate Link - We (Plugin Authors) earn commission on sales generated through this link.</p>
 </div>
 
 
