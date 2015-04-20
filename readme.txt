@@ -42,6 +42,8 @@ The print icon used is part of [Font Awesome](http://fortawesome.github.io/Font-
 
 Thanks to [Ben Nadel](http://www.bennadel.com/blog/1591-ask-ben-print-part-of-a-web-page-with-jquery.htm) for his article on Print Part of a Website, This is a great article and great resource in general.
 
+Thanks to Patrick Evans for his answer on [Stackoverflow](http://stackoverflow.com/a/25461414) - This is licensed under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) - This snippet was modified to help with getting the content to print.
+
 
 == Installation ==
 
