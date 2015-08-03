@@ -73,7 +73,7 @@ $h5abPrintCSS = get_option('h5abPrintCSS');
 
                     <tr>
                     <td scope="row" align="left">
-                    <label>Print Custom / Additional CSS: </label>
+                    <label>Print Custom / Additional CSS (Without Style Tags): </label>
                     <br/>
 <textarea name="h5ab-print-css" class="h5ab-print-css">
 <?php echo wp_kses_post($h5abPrintCSS); ?>
