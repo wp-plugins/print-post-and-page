@@ -1,8 +1,12 @@
 jQuery(document).ready(function($) {
 
+var h5absettings = h5abPrintSettings;
+
 $('#h5ab-print-post-frame').remove();
 
 $('.h5ab-print-button').on('click',function(){
+
+console.log(h5absettings);
 
 $('body').prepend('<iframe sandbox="allow-same-origin" id="h5ab-print-post-frame" name="h5ab-print-post-frame"></iframe>')
 
@@ -39,6 +43,8 @@ $.each(linkArray, function( index, value ) {
 $.each(styleArray, function( index, value ) {
     iframeHead.append('<style>' + value + '</style>');
 });
+
+iframeHead.append('<style>' + h5absettings + '</style>');
 
 iframeHead.append('<style>html, body {margin: 0!important; background: #fff!important; background-color: #fff!important; font-family: arial!important;}html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {font-family: arial!important;-webkit-box-sizing: border-box!important;-moz-box-sizing: border-box!important;box-sizing: border-box!important;font-family: arial!important;color: #111!important;}h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {text-decoration: none!important; color: #000!important;}a, a:visited {color: #333!important;} img {max-width: 100%!important; height: auto!important;} article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block!important;}table, th, tr, td {color: #111!important;}table {border: 1px solid #ddd!important;}</style>');
 

@@ -1,3 +1,24 @@
+#h5ab-print-active {
+display: none;
+}
+
+#h5ab-print-active + label {
+display: inline-block;
+background-color: #e74c3c;
+padding: 10px;
+color: #fff;
+}
+
+#h5ab-print-active:checked + label {
+background-color: #2ecc71;
+}
+
+.h5ab-print-css {
+max-width: 500px;
+width: 90%;
+min-height: 200px;
+}
+
 .h5ab-affiliate-advert {
 position: absolute;
 width: 300px;

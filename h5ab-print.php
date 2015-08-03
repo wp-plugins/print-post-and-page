@@ -4,7 +4,7 @@
  * Plugin Name: Print Post and Page
  * Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
  * Description: Add a Print Friendly Button to Posts and Pages.
- * Version: 1.1
+ * Version: 1.2
  * Author: HTML5andBeyond
  * Author URI: http://www.html5andbeyond.com/
  * License: GPL2 or Later
@@ -22,7 +22,7 @@
 			class H5AB_Print {
 
 			    private $formResponse = '';
-			
+
 				public function __construct() {
 
 					add_action('admin_menu', array($this, 'add_menu'));
@@ -70,24 +70,29 @@
 
 					wp_enqueue_style('h5ab-print-font-awesome', H5AB_PRINT_PLUGIN_URL . 'css/font-awesome.min.css');
                     wp_enqueue_style('h5ab-print-css', H5AB_PRINT_PLUGIN_URL . 'css/h5ab-print.css');
-					wp_enqueue_script('h5ab-print-js', H5AB_PRINT_PLUGIN_URL . 'js/h5ab-print.js', array('jquery'), '', true);
+
+                    $h5abPrintCSS = get_option('h5abPrintCSS');
+					$printSettings = (! empty($h5abPrintCSS))? $h5abPrintCSS : '';
+
+                    wp_enqueue_script('h5ab-print-js', H5AB_PRINT_PLUGIN_URL . 'js/h5ab-print.js', array('jquery'), '', true);
+                    wp_localize_script( 'h5ab-print-js', 'h5abPrintSettings', $printSettings);
 
 				}
 
                 public function on_page_scripts() {
 					include_once(sprintf("%s/js/h5ab-on-page-script.php", H5AB_PRINT_PLUGIN_DIR));
 				}
-				
+
 				public function setFormResponse($response) {
 					$class = ($response['success']) ? 'updated' : 'error';
 				    $this->formResponse =  '<div = class="' . $class . '"><p>' . $response['message'] . '</p></div>';
 				}
-				
+
 				public function getFormResponse() {
 				    $fr = $this->formResponse;
 				    echo $fr;
 				}
-				
+
                 public function validate_form_callback() {
 
 					if (isset($_POST['h5ab_print_settings_nonce'])) {
@@ -95,11 +100,11 @@
 							if(wp_verify_nonce( $_POST['h5ab_print_settings_nonce'], 'h5ab_print_settings_n' )) {
 
 								$response = h5ab_print_settings();
-								
+
 								$this->setFormResponse($response);
 
 								add_action('admin_notices',  array($this, 'getFormResponse'));
-											
+
 							} else {
 								wp_die("You do not have access to this page");
 							}

@@ -1,6 +1,7 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit;
 $h5abPrintArray = get_option('h5abPrintData');
+$h5abPrintCSS = get_option('h5abPrintCSS');
 ?>
 
 <div id="h5ab-print-container">
@@ -15,9 +16,8 @@ $h5abPrintArray = get_option('h5abPrintData');
 
                     <tr>
                     <td scope="row" align="left">
-                    <label>Print Active: </label>
-                    <br/>
-                    <input type="checkbox" value='true' <?php if (esc_attr($h5abPrintArray['h5abPrintActive']) == 'true'){echo "checked";} ?> name="h5ab-print-active"/>
+                    <input type="checkbox" value='true' <?php if (esc_attr($h5abPrintArray['h5abPrintActive']) == 'true'){echo "checked";} ?> name="h5ab-print-active" id="h5ab-print-active" />
+                    <label for="h5ab-print-active">Print Active</label>
                     </td>
                     </tr>
 
@@ -68,6 +68,16 @@ $h5abPrintArray = get_option('h5abPrintData');
                         <option <?php if(esc_attr($h5abPrintArray['h5abPrintAlignment']) == 'left'){echo 'selected';}; ?> value="left">Left</option>
                         <option <?php if(esc_attr($h5abPrintArray['h5abPrintAlignment']) == 'right'){echo 'selected';}; ?> value="right">Right</option>
                     </select>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td scope="row" align="left">
+                    <label>Print Custom / Additional CSS: </label>
+                    <br/>
+<textarea name="h5ab-print-css" class="h5ab-print-css">
+<?php echo wp_kses_post($h5abPrintCSS); ?>
+</textarea>
                     </td>
                     </tr>
 
